@@ -9,6 +9,4 @@
 		"backend:deploy": "cd udagram-api && npm run deploy"
     }
 	
-	
-    "devDependencies": {}
 }
