@@ -7,10 +7,9 @@ orbs:
 
 jobs:
   build:
-    filters:
-        branches:
-          only:
-            - main
+    branches:
+      only:
+        main
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -43,3 +42,4 @@ jobs:
           command: |
             npm run frontend:deploy
 
+   
