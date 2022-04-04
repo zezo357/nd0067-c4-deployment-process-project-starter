@@ -5,8 +5,9 @@
         "backend:install": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm install --save --legacy-peer-deps",
         "frontend:build": "cd udagram-frontend && export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
         "backend:build": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
+		"frontend:test": "cd udagram-frontend && export NODE_OPTIONS=--openssl-legacy-provider && npm run test",
         "frontend:deploy": "cd udagram-frontend && export NODE_OPTIONS=--openssl-legacy-provider && npm run deploy",
-		    "backend:deploy": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm run deploy",
+		"backend:deploy": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm run deploy",
 
         "frontend:windows:install": "cd udagram-frontend  && npm install --save --legacy-peer-deps",
         "backend:windows:install": "cd udagram-api  && npm install --save --legacy-peer-deps",
