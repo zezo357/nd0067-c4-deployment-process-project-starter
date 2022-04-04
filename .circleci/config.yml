@@ -7,9 +7,6 @@ orbs:
 
 jobs:
   build:
-    branches:
-      only:
-        main
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -41,5 +38,13 @@ jobs:
           name: Deploy App Front-End
           command: |
             npm run frontend:deploy
-
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
    
