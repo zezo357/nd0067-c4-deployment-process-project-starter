@@ -1,12 +1,12 @@
 
 {
       "scripts": {
-        "frontend:install": "cd udagram-frontend && npm install --save --legacy-peer-deps",
-        "backend:install": "cd udagram-api && npm install --save --legacy-peer-deps",
-        "frontend:build": "cd udagram-frontend && npm run build",
-        "backend:build": "cd udagram-api && npm run build",
-        "frontend:deploy": "cd udagram-frontend && npm run deploy",
-		"backend:deploy": "cd udagram-api && npm run deploy"
+        "frontend:install": "cd udagram-frontend && export NODE_OPTIONS=--openssl-legacy-provider && npm install --save --legacy-peer-deps",
+        "backend:install": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm install --save --legacy-peer-deps",
+        "frontend:build": "cd udagram-frontend && export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
+        "backend:build": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
+        "frontend:deploy": "cd udagram-frontend && export NODE_OPTIONS=--openssl-legacy-provider && npm run deploy",
+		"backend:deploy": "cd udagram-api && export NODE_OPTIONS=--openssl-legacy-provider && npm run deploy"
     }
 	
 }

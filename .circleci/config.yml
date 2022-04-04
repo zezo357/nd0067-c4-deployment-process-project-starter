@@ -12,10 +12,6 @@ jobs:
       - checkout
       - aws-cli/setup
       - run:
-          name: Openssl
-          command: |
-            export NODE_OPTIONS=--openssl-legacy-provider
-      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
