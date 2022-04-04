@@ -7,6 +7,10 @@ orbs:
 
 jobs:
   build:
+    filters:
+        branches:
+          only:
+            - main
     docker:
       - image: "cimg/base:stable"
     steps:
